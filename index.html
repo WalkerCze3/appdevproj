@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toilet Finder App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <!-- JavaScript for login -->
+    <script type="module" src="signin.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Page -->
+        <div id="loginPage">
+            <div id="logo">
+                <img src="poop.png" alt="Logo" id="appLogo">
+            </div>
+            <h2 id="loginTitle">Sign In</h2>
+            
+            <form id="loginForm">
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="password" type="password" placeholder="Password" required>
+                <button id="loginButton" type="loginButton">Sign In</button>
+            </form>
+            <button id="signupButton" type="signupButton">Sign Up</button>
+        </div>
+    </div>
+    <script>
+        // Get the Sign Up button
+        const signupButton = document.getElementById('signupButton');
+    
+        // Add a click event listener to redirect to register.html
+        signupButton.addEventListener('click', () => {
+            window.location.href = 'register.html'; // Redirect to the registration page
+        });
+    </script>
+</body>
+</html>
